@@ -1,0 +1,50 @@
+10+10(addition)
+
+10-10(subtraction)
+
+10*10(multiplication)
+
+10/10(divsion)
+
+===============================================
+
+---Order of operations---
+(...) are done first
+*,/ are done second
++,- are done last
+
+
+(20.95+7.99*2)*(10/100) 
+
+======================================================
+
+-->computers have a problem working with floats.
+
+0.1+0.2(0.30000000000000004 this is because of computers cannot store floats in the binary format accurately in some cases)
+
+=>(convert to the float to the decimal to get the accurate value)
+
+=============================================================
+
+Math.round(2.2) =>2 , Math.round(-2.2)=>-2
+Math.round(2.8) =>3 , Math.round(-2.8)=>-3
+Math.round(2.5) =>3 , Math.round(-2.5)=>-2
+
+Math.round((2095+799)*(10/100))/100;
+
+==============Exercises===================================
+2A)(1*10)+(3*8)+(1*5)
+2B)((1*10)+(3*8)+(1*5))/3
+2C)18.50+(2*7.50)
+2D)(10/100)*(18.50+(2*7.50))
+2E)(20/100)*(18.50+(2*7.50))
+2F)(18.99*100+4.99*100)/100;
+2G)(18.99*100+4.99*100+4.99*100)/100;
+2H)Math.round((18.99*100+4.99*100+4.99*100)*(10/100))/100;
+2I)Math.round((18.99*100+4.99*100+4.99*100)*(10/100))/100+(18.99*100+4.99*100+4.99*100);
+2J)Math.floor(2.8);  =>2
+2K)Math.ceil(2.2);  =>3
+2L)Fahrenheit=(Celsius*9/5)+32
+2M)Celsius=(Fahrenheit-32)*5/9
+2N)Fahrenheit=(-5*9/5)+32
+
