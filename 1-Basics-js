@@ -1,0 +1,26 @@
+alert("hello");  //creates the pop-up
+
+document.body.innerHTML="hello";  //hello will be displayed on the body 
+
+
+  EXERCICES
+--------------
+1A)alert("good morning");
+
+1B)alert("Praveen varma");
+
+1C)10+5
+
+1D)20-5
+
+1E)2+2-5
+
+1F)document.body.innerHTML="good morning";
+
+1G)document.body.innerHTML="Praveen varma";
+
+1H)10+8+20
+
+1I)100-20-5-+200
+
+1J)document.body.innerHTML="";
