@@ -40,9 +40,45 @@
     console.log(`cart quantity :${cartQuantity}`);
     "
     >Reset Cart
-
-
 </button>
+<button onclick="
+    if(cartQuantity>=1)
+    {
+        cartQuantity = cartQuantity - 1;
+        console.log(`cart quantity :${cartQuantity}`);
+    }
+    else
+    {
+        console.log(`Cart doesn,t have any thing`);
+    }
+    ">Remove from cart
+</button>
+<button onclick="
+    if(cartQuantity>=2)
+    {
+        cartQuantity = cartQuantity - 2;
+        console.log(`cart quantity :${cartQuantity}`);
+    }
+    else
+    {
+        console.log(`Cart doesn,t have 2 items`);
+    }
+    ">-2
+</button>
+<button onclick="
+    if(cartQuantity>=3)
+    {
+        cartQuantity = cartQuantity - 3;
+        console.log(`cart quantity :${cartQuantity}`);
+    }
+    else
+    {
+        console.log(`Cart doesn,t have 3 items`);
+    }
+    ">-3
+</button>
+
+
 
     <script>
         let cartQuantity=0;
@@ -67,7 +103,7 @@
         kabab-case => all words are lowercase and combine all the words with -(it doesn't work in js.we use it for HTML,CSS and file naming convention).
         snake_case => all words are lowercase and combine all the words with _.
         */
-        
+
     </script>
 </body>
 </html>
