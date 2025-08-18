@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Varibles-Exercises</title>
+</head>
+<body>
+
+
+    <input type="text" id="display" readonly>
+    <br>
+
+    <button onclick="
+    calculation=calculation+'1';
+    display.value=calculation;
+    ">1
+    </button>
+        <button onclick="
+        calculation=calculation+'2';
+        display.value=calculation;
+        "
+        >2
+    </button>
+    <button onclick="
+    calculation=calculation+'3';
+    display.value=calculation;
+    "
+    >
+    3</button>
+    <button onclick="
+    calculation=calculation+'4';
+    display.value=calculation;
+    "
+    >
+    4</button>
+    <button onclick="
+    calculation=calculation+'5';
+    display.value=calculation;
+    "
+    >
+    5</button>
+    <button onclick="
+    calculation=calculation+'6';
+    display.value=calculation;
+    "
+    >
+    6</button>
+    <button onclick="
+    calculation=calculation+'7';
+    display.value=calculation;
+    "
+    >
+    7</button>
+    <button onclick="
+    calculation=calculation+'8';
+    display.value=calculation;
+    "
+    >
+    8</button>
+    <button onclick="
+    calculation=calculation+'9';
+    display.value=calculation;
+    "
+    >
+    9</button>
+    <button onclick="
+    calculation=calculation+'0';
+    display.value=calculation;
+    "
+    >
+    0</button>
+    <button onclick="
+    calculation=calculation+'+';
+    display.value=calculation;
+    "
+    >
+    +</button>
+    <button onclick="
+    calculation=calculation+'-';
+    display.value=calculation;
+    "
+    >
+    -</button>
+    <button onclick="
+    calculation=calculation+'*';
+    display.value=calculation;
+    "
+    >
+    *</button>
+    <button onclick="
+    calculation=calculation+'/';
+    display.value=calculation;
+    "
+    >
+    /</button>
+    <button onclick="
+    calculation=calculation+'(';
+    display.value=calculation;
+    "
+    >
+    (</button>
+    <button onclick="
+    calculation=calculation+')';
+    display.value=calculation;
+    "
+    >
+    )</button>
+    <button onclick="
+    calculation='';
+    display.value=calculation;
+    "
+    >
+    C</button>
+    <button onclick="
+    try
+    {
+        calculation=eval(calculation);
+        display.value=calculation;
+        console.log(calculation);
+    }
+    catch(err)
+    {
+        display.value='Error';
+        console.log(err);
+    }
+    finally
+    {
+
+        console.log('program was done');
+    }
+    "
+    >
+    =</button>
+
+
+
+    <script>
+        let name=`Praveen varma`;//4A
+
+        console.log(`My name is :${name}`); //4B
+
+        let cost=(1*5)+(2*3)+(1*9); //4C
+
+        console.log(`Cost of Food : ${cost}`); //4D
+
+        let tax=cost*(10/100); //4E
+
+        console.log(`Tax(10%) :${tax}`); //4F
+
+        let totalCost=cost+tax;
+        console.log(`Total cost : ${totalCost}`); //4G
+
+
+
+        //calculator-js
+        let calculation='';
+        const display=document.getElementById('display'); //4L-4R
+
+    </script>
+
+</body>
+</html>
