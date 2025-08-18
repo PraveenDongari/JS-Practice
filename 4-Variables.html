@@ -10,7 +10,47 @@
 </head>
 <body>
     <script>
-         
+        
+
+        /*
+            variable names cannot be
+            1)special names Eg:let,var
+            2)cannot start with number
+            3)cant use spacial charecters except $ and _ .
+        */
+
+
+        // ; is an end of instruction.
+
+        // js can insert ; at the end of the instruction. eg:console.log(5);console.log(6)(but it is not preferable)
+
+        let variable=3; //Assigning a value to a variable.
+        console.log(variable);
+
+        variable=5; //re-Assigning a value to a variable.
+        console.log(variable);
+
+        variable=variable+1; // increasing it by one and adding it to the same variable
+        console.log(variable);
+
+
+        const variable1=3; // we use const to make a variable safer.
+        variable1=3; //it shows an error because const variable cannot be changable.
+        console.log(variable1);
+
+        var variable2=3; //var=variable(it has some issues.because of the issues we dont use var in new javascript).
+        variable=5;
+        console.log(variable2);
+
+
+        /*
+        ----Ways to create a variable-----
+        best pracice=use const by default.
+        only use let when we need to change the variable.
+        var is not recommended to use in new js.
+        */
+
+    console.log(typeof(variable));//it prints type of variable
     </script>
 </body>
 </html>
