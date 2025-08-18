@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-Quantity</title>
+</head>
+<body>
+    <button 
+    onclick="
+    console.log(`cart quantity :${cartQuantity}`);
+    ">
+    Show Quantity
+</button>
+    <button onclick="
+    cartQuantity=cartQuantity +1;
+    //cartQuantity+=1; it is same as cartQuantity =cartQuantity +1;
+    //caerQuantity++; //specially for incrementing by 1.
+    console.log(`cart quantity :${cartQuantity}`);
+    "
+    >Add to Cart
+</button>
+    <button onclick="
+    cartQuantity=cartQuantity+2;
+    //cartQuantity+=2;
+    console.log(`cart quantity :${cartQuantity}`);
+    ">+2
+    </button>
+    <button
+    onclick="
+    cartQuantity=cartQuantity+3;
+    //cartQuantity+=3; it is same as cartQuantity=cartQuantity+3;
+    console.log(`cart quantity :${cartQuantity}`);
+    "
+    >+3
+    </button>
+    <button onclick="
+    cartQuantity=0;
+    console.log(`cart was reset`);
+    console.log(`cart quantity :${cartQuantity}`);
+    "
+    >Reset Cart
+
+
+</button>
+
+    <script>
+        let cartQuantity=0;
+        /*
+
+            ---Variable Re-assignment shortcuts---
+
+            variable+=2   variable=variable+2;
+            variable-=2   variable=variable-2;
+            variable*=2   variable=variable*2;
+            variable/=2   variable=variable/2;
+            variable++    variable=variable+1;
+            variable--    variable=variable-1;
+        */
+
+        /*
+
+        ---variable naming convention----
+
+        camelCase => capitalize every word except the first word(standard in js).
+        PascalCase => capitalize every word.
+        kabab-case => all words are lowercase and combine all the words with -(it doesn't work in js.we use it for HTML,CSS and file naming convention).
+        snake_case => all words are lowercase and combine all the words with _.
+        */
+        
+    </script>
+</body>
+</html>
