@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <script>
+
+        //booleans are another type of values
+        //there are only 2 boolean values :true,false
+
+        console.log(2<5);
+        console.log(2>5);
+
+        console.log(typeof(3>5));
+
+        console.log(!true) //false.
+
+
+        /*
+        ----comparision Operators----
+        > greater than
+        < less than
+        >= greater than or equal to
+        <= lessthan or equal to
+        === stricktly equal to (5==='5.00' = false)
+        !== strictly not equal to
+        == equal to (5=='5.00' =true)
+        != not equal to
+        */
+        if(true)
+        {
+            console.log("hello");
+        }
+
+
+        if(false)
+            console.log("hello"); //if we have one line of code in the if condition we dont need to use{}.
+        else //else statement is optional.
+            console.log("else");
+
+
+        const age=15;
+        if(age>=16)
+        {
+            console.log("you can drive");
+            console.log("congrats");
+        }
+        else if(age>=14)
+        {
+            console.log("almost there");
+        }
+        else{
+            console.log("you can not drive");
+        }
+
+        console.log(Math.random())  //0<=number <1.
+
+        console.log(true && false); //false
+        console.log(true && true); //true
+        console.log(false && false); //false
+
+        console.log(true || true); //true
+        console.log(true || false); //true
+        console.log(false || false); //false
+
+
+        /*
+            truthy-falsy values(we use it for shortcut)
+
+            ---falsy Values ---
+            false,0,'',NaN,undefined,null.
+            we will get Nan when we did invalid math.eg:'kgf'/5;
+
+            remaining are truthy values.
+        */
+
+        if(5)
+        {
+            console.log('truthy value');
+        }
+        
+
+        if(0)
+        {
+            console.log('truthy value');
+        }
+        else{
+            console.log('falsy value');
+        }
+
+
+        /*
+            -----ternary Operator -----
+            (true)? 'truthy' : 'falsy'; //same as if else condition.
+            const result=(true)? 'truethy' : 'falsy';
+        */
+
+        /*
+        ----Guard Operator -----
+            false && value
+            false && console.log('hello'); //hello will not print.
+
+            const message= false && 'hello';
+            console.log(message);  //false
+
+            const message=5 && 'hello';
+            console.log(message); //hello
+        */
+
+        /*
+        ----default Operator ------
+            true || value
+
+            const currency='EUR' || 'USD';
+            console.log(currency); //EUR
+
+            const currency=undefined || 'USD';
+            console.log(currency);
+        */
+    </script>
+
+</body>
+</html>
