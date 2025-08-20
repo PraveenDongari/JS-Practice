@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans and if-Statements</title>
+</head>
+<body>
+    
+    <script>
+
+        //5A -5C
+
+        let hour=17;
+        const name="Praveen Varma";
+
+        if(hour>=6 && hour <=12)
+        {
+            console.log(`good Morning! ${name}`);
+        }
+        else if(hour>=13 && hour <=17)
+        {
+            console.log(`Good Afternoon! ${name}`);
+        }
+        else{
+            console.log(`Good Night! ${name}`);
+        }
+
+
+            //5D-5E
+        let age=1;
+        const isHoliday=false;
+
+        //&& has higher priority than || so use brackets () to control which code gets done first.
+
+        if((age<=6 || age >=65) && !isHoliday)
+        {
+            console.log("discount");
+        }
+        else{
+            console.log("No Discount");
+        }
+
+
+
+        
+        let flip=Math.random();
+        let result='';
+        let guess="Heads";
+        if(flip>=0 && flip <0.5)
+        {
+            result="Heads";
+        }
+        else if(flip>=0.5 && flip<1)
+        {
+            result="Tails";
+        }
+        
+        /* if(result===guess)
+        {
+            console.log("You Won");
+        }
+        else if(result!==guess)
+        {
+            console.log("You Lose");
+        }*/
+        (result===guess)?console.log("You Won"):console.log("You Lose");
+
+    </script>
+    
+</body>
+</html>
